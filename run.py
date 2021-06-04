@@ -3,7 +3,6 @@ from flask import Flask, render_template
 
 
 app = Flask(__name__)
-print(app)
 
 @app.route("/")
 def index():
@@ -23,7 +22,6 @@ def contact():
 @app.route("/careers")
 def careers():
     return render_template("careers.html")
-
 
 if __name__ == "__main__":
     app.run(
